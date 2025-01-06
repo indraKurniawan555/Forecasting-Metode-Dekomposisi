@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: rgb(255, 255, 255);
+    color: rgb(44, 43, 43);
+    padding: 10px 20px; /* Tambahkan padding untuk estetika */
+    display: flex; /* Mengaktifkan Flexbox */
+    justify-content: space-between; /* Elemen diatur kiri dan kanan */
+    align-items: center; /* Menyelaraskan elemen secara vertikal */
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: gb(44, 43, 43);
+    text-decoration: none;
+}
+
+.utama a {
+    font-family: Georgia, 'Times New Roman', Times, serif, 'Arial Narrow', Arial, sans-serif; /* Gunakan font yang populer atau spesifik */
+    font-size: 18px; /* Ukuran font */
+    font-weight: bold; /* Membuat font lebih tebal */
+    color: #333; /* Warna font */
+    text-decoration: none; /* Hilangkan garis bawah */
+    padding: 5px 10px; /* Memberikan ruang di dalam */
+    margin-right: 20px;
+    margin-left: 0px;
+    border-radius: 5px; /* Membuat sudut melengkung */
+    transition: background-color 0.3s, color 0.3s; /* Animasi saat hover */
+}
+
+.utama a:hover {
+    color: #fff; /* Warna font saat hover */
+    background-color: #007BFF; /* Latar belakang biru saat hover */
+}
+
+.hero {
+    position: relative;
+    background-image: url('camp nou.jpg');
+    background-size: cover; /* Memastikan gambar mengisi elemen */
+    background-position: center; /* Pusatkan gambar */
+    margin-top: 70px;
+    padding: 20px 0;
+    text-align: center;
+    color: #333; /* Warna teks */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Warna putih transparan */
+    z-index: 1; /* Letakkan di bawah konten */
+}
+
+.hero * {
+    position: relative;
+    z-index: 2; /* Pastikan teks di atas overlay */
+}
+
+
+.hero-content {
+    margin-bottom: 20px;
+}
+
+.features {
+    background: #e2e2e2;
+    padding: 20px 0;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+
+.inputdata {
+    background: linear-gradient(to right, #4CAF50, #81C784); /* Gradien hijau */
+    border: none;
+    color: white; /* Warna teks */
+    padding: 12px 25px; /* Ukuran tombol */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px; /* Membuat tombol melengkung */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Bayangan */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Efek transisi */
+}
+
+.inputdata:hover {
+    background: linear-gradient(to right, #81C784, #4CAF50); /* Gradien berubah arah */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Bayangan lebih besar */
+    transform: scale(1.05); /* Membesar sedikit */
+}
+
+.inputdata:active {
+    background: #388E3C; /* Warna solid saat diklik */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bayangan lebih kecil */
+    transform: scale(0.98); /* Sedikit mengecil */
+}

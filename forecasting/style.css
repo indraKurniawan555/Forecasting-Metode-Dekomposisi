@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* Warna latar */
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-weight: bold; /* Membuat semua teks di header bold */
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #222;
+}
+
+.logo img {
+    height: 40px; /* Sesuaikan ukuran logo */
+    width: auto;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold; /* Teks bold */
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0056b3; /* Warna hover */
+}
+
+nav ul li a i {
+    margin-left: 5px; /* Jarak ikon dengan teks */
+}
+
+/* Tombol Login */
+.login-button a {
+    text-decoration: none;
+    background-color: #0056b3; /* Warna merah */
+    color: #fff; /* Warna font */
+    padding: 8px 20px;
+    border-radius: 20px; /* Rounded corners */
+    font-weight: bold; /* Teks bold */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.login-button a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+/* Background Image untuk Landing Page */
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: url('bgutm.jpg') no-repeat center center/cover; /* Ganti 'background.jpg' dengan path gambar Anda */
+    position: relative;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Overlay Gelap untuk Meningkatkan Kontras */
+.landing-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay transparan hitam */
+    z-index: 1;
+}
+
+/* Pastikan Konten Tetap di Atas Overlay */
+.landing-page h1,
+.landing-page p,
+.landing-page .cta-button {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.landing-page h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.landing-page p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #012c5a;
+    transform: scale(1.1);
+}
+
+/* FEATURES SECTION */
+.features {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #003366;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+.feature-item p {
+    color: #555;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #003366;
+    color: rgb(35, 34, 34);
+    font-size: 0.9rem;
+}
